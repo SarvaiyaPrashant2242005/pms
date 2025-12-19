@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended : true}));
 
 
 // Health check
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'Server is running', server : "medtrack" });
 });
 
